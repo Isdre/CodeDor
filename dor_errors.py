@@ -1,6 +1,6 @@
 class LexicalError(Exception):
-    def __init__(self, leks:tuple[str,int,int]): #leks[0] - znak, leks[1] - liniam, leks[2] - kolumna
-        self.message = f'Nieprawidłowy znak \'{leks[0]}\' linia {leks[1]}, kolumna {leks[2]}'
+    def __init__(self, leks:tuple[str,int]): #leks[0] - znak, leks[1] - liniam
+        self.message = f'Nieprawidłowy znak \'{leks[0]}\' linia {leks[1]}'
     def __str__(self):
         return self.message
 

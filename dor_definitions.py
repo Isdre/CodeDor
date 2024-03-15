@@ -1,12 +1,12 @@
 from enum import Enum
 class AtomType(Enum):
-    DIGIT = 0
-    ACTION = 1
-    CLOSE_BRACKET = 2
-    OPEN_BRACKET = 3
-    WHITE = 4
-    COMMENT = 5
-    BREAKLINE = 6
+    DIGIT = 1
+    ACTION = 2
+    CLOSE_BRACKET = 3
+    OPEN_BRACKET = 4
+    WHITE = 5
+    COMMENT = 6
+    BREAKLINE = 7
 
 class Atom:
     def __init__(self, type: AtomType, value: chr):
