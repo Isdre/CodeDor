@@ -44,7 +44,7 @@ def Scan(file):
             if token.type == AtomType.COMMENT: break
             tokens_line.append(token)
             #print(f"(\"{token.value}\",{token.type})")
-        if token is None and text != "": raise dor_errors.LexicalError((text,i))
+        if token is None and text != "": raise dor_errors.LexicalError((text, i))
         print()
         token_table.append(tokens_line)
     return token_table
